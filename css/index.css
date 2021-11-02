@@ -1,0 +1,203 @@
+:root {
+  --purple: rgb(77, 19, 209);
+  --white: #ffffff;
+  --black: #000000;
+  --bg-color: rgb(251, 248, 243);
+  --grey-1: rgb(79, 79, 79);
+}
+@font-face {
+  font-family: Inter;
+  src: url("../fonts/Inter-Regular.ttf");
+}
+@font-face {
+  font-family: InterMedium;
+  src: url("../fonts/Inter-Medium.ttf");
+}
+@font-face {
+  font-family: InterBold;
+  src: url("../fonts/Inter-Bold.ttf");
+}
+@font-face {
+  font-family: InterExtraBold;
+  src: url("../fonts/Inter-ExtraBold.ttf");
+}
+@font-face {
+  font-family: InterSemiBold;
+  src: url("../fonts/Inter-SemiBold.ttf");
+}
+@font-face {
+  font-family: InterLight;
+  src: url("../fonts/Inter-Light.ttf");
+}
+.container-fluid:nth-child(1) {
+  background-color: var(--bg-color);
+  padding-bottom: 8rem;
+}
+.navbar-brand,
+.navbar-brand:hover,
+.navbar-brand:focus,
+.navbar-brand:active {
+  font-family: InterBold;
+  color: var(--black);
+}
+.nav-link,
+.nav-link:hover,
+.nav-link:focus,
+.nav-link:active {
+  font-family: Inter;
+  color: var(--black);
+}
+
+#sign-in {
+  font-family: InterBold;
+}
+nav .btn-primary,
+nav .btn-primary:hover,
+nav .btn-primary:active,
+nav .btn-primary:focus,
+div .btn-primary,
+div .btn-primary:hover,
+div .btn-primary:active,
+div .btn-primary:focus {
+  background-color: var(--purple);
+  font-family: InterSemiBold;
+  color: var(--white);
+  font-size: 1rem;
+  padding: 0.85rem 1.6rem;
+}
+div span a,
+div span a:hover,
+div span a:focus,
+div span a:active {
+  color: var(--purple);
+  font-family: InterBold;
+  text-decoration: none;
+  border-bottom: 2px solid var(--purple);
+}
+div p {
+  color: var(--black);
+  font-family: Inter;
+}
+div ul {
+  list-style-type: none;
+}
+div .row ul li {
+  background: url("../Assets/Checkmark.svg") no-repeat;
+  padding-left: 2rem;
+}
+main h1 {
+  font-family: InterBold;
+  font-size: 3.3rem;
+  color: var(--black);
+}
+main h2 {
+  font-family: Inter;
+  font-size: 1.1rem;
+  color: var(--grey-1);
+}
+main ul li {
+  font-family: Inter;
+  color: var(--grey-1);
+}
+section:nth-of-type(1) h3 {
+  color: var(--purple);
+  font-size: 1.1rem;
+  font-family: InterBold;
+}
+section:nth-of-type(1) h4 {
+  font-family: InterBold;
+  font-size: 2rem;
+}
+.heading {
+  font-family: InterExtraBold;
+  font-size: 0.95rem;
+  color: var(--black);
+}
+.sub-heading {
+  color: var(--grey-1);
+  font-size: 1.1rem;
+}
+section:nth-of-type(2) {
+  background-color: var(--purple);
+  border-radius: 0.75rem;
+}
+section .btn-primary,
+section .btn-primary:hover,
+section .btn-primary:active,
+section .btn-primary:focus {
+  background-color: var(--white);
+  color: var(--purple);
+  font-family: InterBold;
+  padding: 1rem 0;
+}
+section h2 {
+  color: var(--white);
+  font-family: InterBold;
+  font-size: 2.45rem;
+}
+section h6 {
+  font-family: InterLight;
+  color: rgb(230, 222, 253);
+  font-size: 1.2rem;
+}
+.profile-name {
+  color: var(--purple);
+  font-family: InterBold;
+  font-size: 0.95rem;
+  line-height: 1;
+}
+.revenue {
+  color: var(--black);
+  font-size: 0.95rem;
+}
+.container-fluid:last-of-type {
+  background-color: var(--bg-color);
+}
+#footer ul {
+  list-style-type: none;
+}
+#footer p {
+  color: var(--grey-1);
+  font-size: 1.05rem;
+}
+#footer ul li {
+  background: none !important;
+  padding-left: 0;
+}
+.footer-heading {
+  color: var(--black);
+  font-family: InterBold;
+  font-size: 1.125rem;
+}
+#footer .nav-link {
+  color: var(--grey-1);
+  padding: 0.5rem 0 0 0;
+  font-size: 1.05rem;
+}
+.col-sm-4 a,
+.col-sm-4 a:hover,
+.col-sm-4 a:active,
+.col-sm-4 a:focus {
+  color: var(--purple);
+  font-family: InterBold;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  padding: 0.85rem 0.5rem;
+  font-size: 1rem;
+  background-color: var(--white);
+}
+@media (min-width: 577px) {
+  #portfolios > .row > .col-sm-4 {
+    width: 25rem;
+  }
+}
+@media (max-width: 576px) {
+  main h1 {
+    font-size: 2.6rem;
+  }
+  section h6 {
+    font-size: 1.3rem;
+  }
+  #navbar__second {
+    display: block !important;
+  }
+}

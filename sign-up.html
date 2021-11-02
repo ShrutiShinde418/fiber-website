@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up-Fiber</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/sign-up.css" />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <main class="row flex-md-column-reverse flex-lg-row">
+        <div class="col-lg-6 px-lg-5">
+          <form class="container px-lg-5 mt-5 needs-validation" novalidate>
+            <a href="index.html" class="navbar-brand">Fiber</a>
+            <h1 class="mt-5">Create your Fiber account</h1>
+            <div
+              class="form-group pt-lg-1 col-lg-11 input-group-lg has-validation"
+            >
+              <label for="validationCustom01" class="form-label mb-1"
+                >Your Name</label
+              >
+              <input
+                type="text"
+                name="name"
+                id="validationCustom01"
+                class="form-control"
+                placeholder="John Doe"
+                required
+              />
+              <div class="invalid-feedback">Please enter your name.</div>
+              <div class="valid-feedback">Looks good!</div>
+            </div>
+            <div
+              class="
+                form-group
+                mt-4
+                input-group-lg
+                col-lg-11
+                pt-lg-2
+                has-validation
+              "
+            >
+              <label for="validationCustom02" class="form-label mb-1"
+                >E-mail</label
+              >
+              <input
+                type="email"
+                name="email"
+                id="validationCustom02"
+                class="form-control"
+                placeholder="john@example.com"
+                required
+              />
+              <div class="invalid-feedback">Please enter your email.</div>
+              <div class="valid-feedback">Looks good!</div>
+            </div>
+            <div
+              class="
+                form-group
+                mt-4
+                input-group-lg
+                col-lg-11
+                pt-lg-2
+                has-validation
+              "
+            >
+              <label for="validationCustom03" class="form-label mb-1"
+                >Password</label
+              >
+              <input
+                type="password"
+                name="password"
+                id="validationCustom03"
+                class="form-control"
+                placeholder="At least 8 characters"
+                required
+              />
+              <img
+                src="Assets/hide password.svg"
+                alt="hide and show your password"
+                onclick="showAndHidePassword();"
+              />
+              <div class="valid-feedback">Looks good!</div>
+              <div class="invalid-feedback">Please enter your password.</div>
+            </div>
+            <div class="mb-3 form-check mt-4 col-lg-11 pt-2">
+              <input
+                type="checkbox"
+                class="form-check-input"
+                id="exampleCheck1"
+                required
+              />
+              <label class="form-check-label" for="validationCustom04"
+                >By creating an account on Fiber, you agree to the
+                <a href="#">Terms & Conditions</a>.</label
+              >
+              <div class="valid-feedback">Great!</div>
+              <div class="invalid-feedback">
+                You must agree before submitting.
+              </div>
+            </div>
+            <button
+              type="submit"
+              class="btn btn-primary p-3 col-lg-11 mt-3"
+              onclick="validate();"
+            >
+              Create Fiber Account
+            </button>
+            <h3 class="mt-2 pt-2 ps-xl-5 ps-md-4 text-center text-sm-start">
+              Already have an account? <a href="#">Sign in</a>
+            </h3>
+          </form>
+        </div>
+        <div
+          class="
+            col-lg-6
+            d-none d-sm-inline d-flex
+            align-items-center
+            justify-content-center
+          "
+        >
+          <img
+            src="Assets/Sign Up Image.png"
+            alt="Sign Up"
+            class="img-fluid mt-lg-5 px-5"
+          />
+          <div class="px-lg-5 mt-4 pt-lg-3" id="description">
+            <h4 class="text-center">Unparalleled Templates</h4>
+            <h5 class="text-center pt-lg-2 lh-base px-lg-4">
+              Crafted by a team of professional designers, our templates are
+              unparalleled in the market.
+            </h5>
+          </div>
+          <div class="menu d-flex justify-content-center mt-3">
+            <span class="circle"></span>
+            <span class="circle"></span>
+            <span class="circle"></span>
+            <span class="circle"></span>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script>
+      var passwordField = document.getElementById("validationCustom03");
+      function showAndHidePassword() {
+        if (passwordField.type === "password") {
+          passwordField.type = "text";
+        } else if (passwordField.type === "text") {
+          passwordField.type = "password";
+        }
+      }
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      function validate() {
+        "use strict";
+
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.querySelectorAll(".needs-validation");
+
+        // Loop over them and prevent submission
+        Array.prototype.slice.call(forms).forEach(function (form) {
+          form.addEventListener(
+            "submit",
+            function (event) {
+              if (!form.checkValidity()) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+
+              form.classList.add("was-validated");
+            },
+            false
+          );
+        });
+      }
+    </script>
+  </body>
+</html>

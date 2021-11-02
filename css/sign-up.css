@@ -1,0 +1,156 @@
+:root {
+  --purple: rgb(77, 19, 209);
+  --white: #ffffff;
+  --black: #000000;
+  --bg-color: rgb(251, 248, 243);
+  --grey-1: rgb(79, 79, 79);
+}
+@font-face {
+  font-family: Inter;
+  src: url("../fonts/Inter-Regular.ttf");
+}
+@font-face {
+  font-family: InterMedium;
+  src: url("../fonts/Inter-Medium.ttf");
+}
+@font-face {
+  font-family: InterBold;
+  src: url("../fonts/Inter-Bold.ttf");
+}
+@font-face {
+  font-family: InterExtraBold;
+  src: url("../fonts/Inter-ExtraBold.ttf");
+}
+@font-face {
+  font-family: InterSemiBold;
+  src: url("../fonts/Inter-SemiBold.ttf");
+}
+@font-face {
+  font-family: InterLight;
+  src: url("../fonts/Inter-Light.ttf");
+}
+.col-lg-6:last-of-type {
+  background: var(--purple);
+  padding-bottom: 7rem;
+}
+.col-lg-6:first-of-type {
+  margin-bottom: 7rem;
+}
+
+.navbar-brand,
+.navbar-brand:hover,
+.navbar-brand:focus,
+.navbar-brand:active {
+  font-family: InterBold;
+  color: var(--black);
+  font-size: 1.2rem;
+}
+form h1 {
+  font-size: 2.2rem;
+  font-family: InterBold;
+  margin-bottom: 2.75rem;
+}
+.form-label {
+  font-family: InterSemiBold;
+  font-size: 1.05rem;
+}
+.form-check-label, .form-check-label:invalid {
+  color: var(--black);
+  font-family: Inter;
+  font-size: 1.025rem;
+}
+label a,
+label a:hover,
+label a:focus,
+label a:active {
+  font-family: InterBold;
+  font-size: 1.025rem;
+  color: var(--purple);
+  text-decoration: none;
+  border-bottom: 2px solid var(--purple);
+}
+.form-group img {
+  display: flex;
+  justify-self: end;
+  margin: -2.35rem 1rem 1.2rem auto;
+  padding-right: 1rem;
+}
+.container .form-control {
+  font-family: Inter;
+  font-size: 1.025rem !important;
+  border: 1px solid rgb(218, 218, 218);
+  padding: 0.85rem 1.2rem;
+}
+.form-control:hover {
+  border: 1px solid var(--purple);
+}
+.form-control::placeholder {
+  font-family: Inter;
+  font-size: 1.05rem;
+  color: rgb(169, 169, 169);
+}
+.form-control::-moz-placeholder {
+  font-family: Inter;
+  font-size: 1.05rem;
+}
+.form-control::-webkit-input-placeholder {
+  font-family: Inter;
+  font-size: 1.05rem;
+}
+.form-check-input {
+  border: 1px solid rgb(218, 218, 218);
+}
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus {
+  background-color: var(--purple);
+  font-family: InterSemiBold;
+  border: 0;
+}
+h3 {
+  font-family: Inter;
+  font-size: 1.025rem;
+}
+h3 a,
+h3 a:hover,
+h3 a:focus,
+h3 a:active {
+  text-decoration: none;
+  color: var(--purple);
+}
+.col-lg-6:last-of-type img {
+  padding-top: 3.5rem;
+}
+#description {
+  color: var(--white);
+}
+#description h4 {
+  font-family: InterBold;
+  font-size: 2.25rem;
+}
+#description h5 {
+  font-family: InterLight;
+  font-size: 1.12rem;
+  color: rgb(229, 221, 253);
+}
+.circle {
+  background-color: rgb(165, 135, 255);
+  border-radius: 50%;
+  height: 15px;
+  width: 15px;
+  display: inline-block;
+  margin-right: 0.75rem;
+}
+.circle:first-of-type {
+  background-color: var(--white);
+}
+@media (max-width: 576px) {
+  div .form-check-label,
+  .form-check-label a {
+    font-size: 1.2rem;
+  }
+  .btn-primary {
+    width: 100%;
+  }
+}
